@@ -8,4 +8,4 @@ class Asignatura:
         if self._salon:
             return f"Asignatura: {self._nombre}, Salon: {self._salon}"
         else:
-            return f"Asignatura: {self._nombre}"
+            return f"Asignatura: {self._nombre} {'Salon: ' + self._salon if self._salon != 'remoto' else ''}" 
