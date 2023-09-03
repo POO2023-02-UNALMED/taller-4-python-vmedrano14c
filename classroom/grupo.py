@@ -5,8 +5,8 @@ class Grupo:
 
     def __init__(self, grupo="grupo ordinado", asignaturas=None, estudiantes=None):
         self._grupo = grupo
-        self._asignaturas = asignaturas or []
-        self.listadoAlumnos = estudiantes or []
+        self._asignaturas = []
+        self.listadoAlumnos = []
 
     def listadoAsignaturas(self, **kwargs):
         for value in kwargs.values():
@@ -25,4 +25,5 @@ class Grupo:
     @classmethod
     def asignarNombre(cls, nombre ="Grado 6"):
         cls.grado = nombre
+
     
