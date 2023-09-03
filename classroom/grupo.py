@@ -22,18 +22,7 @@ class Grupo:
         asignaturas_str = ', '.join(str(asig) for asig in self._asignaturas)
         alumnos_str = ', '.join(self.listadoAlumnos)
         return f"Grupo: {self._grupo}, Asignaturas: {asignaturas_str}, Alumnos: {alumnos_str}"
-
-    @classmethod
-    def asignarNombre(cls, nombre="Grado 10"):
-        cls.grado = nombre
-
-    @classmethod
-    def asignarNombre(cls, nombre="Grado 4"):
-        cls.grado = nombre
-
     @classmethod
     def asignarNombre(cls, nombre="Grado 6"):
         cls.grado = nombre
     
-
-
