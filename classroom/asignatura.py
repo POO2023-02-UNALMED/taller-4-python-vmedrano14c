@@ -5,4 +5,8 @@ class Asignatura:
         self._salon = salon if salon is not None else "remoto"
 
     def __str__(self) -> str:
-        return f"Asignatura: {self._nombre} {'Salon: ' + self._salon if self._salon != 'remoto' else 'remoto'}" 
+        if self._salon != "remoto":
+            return f"Asignatura: {self._nombre}, Salon: {self._salon}"
+        else:
+            return f"Asignatura: {self._nombre} remoto"
+

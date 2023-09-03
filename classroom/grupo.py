@@ -23,6 +23,6 @@ class Grupo:
         alumnos_str = ', '.join(self.listadoAlumnos)
         return f"Grupo: {self._grupo}, Asignaturas: {asignaturas_str}, Alumnos: {alumnos_str}"
     @classmethod
-    def asignarNombre(cls, nombre="Grado 6"):
+    def asignarNombre(cls, nombre ="Grado 6"):
         cls.grado = nombre
     
