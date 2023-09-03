@@ -5,7 +5,7 @@ class Grupo:
 
     def __init__(self, grupo="grupo ordinado", asignaturas=None, estudiantes=None):
         self._grupo = grupo
-        self._asignaturas = [Asignatura(asig) for asig in asignaturas] if asignaturas else[]
+        self._asignaturas = [Asignatura(asig) if isinstance(asig, str) else asig for asig in asignaturas] if asignaturas else []
         self.listadoAlumnos = estudiantes or []
 
     def listadoAsignaturas(self, **kwargs):
