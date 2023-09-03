@@ -1,8 +1,8 @@
 class Asignatura:
 
-    def __init__(self, nombre: str, salon: str = None):
+    def __init__(self, nombre, salon = None):
         self._nombre = nombre
-        self._salon = salon if salon is not None else "remoto"
+        self._salon = "remoto" if not salon else salon
 
-    def __str__(self) -> str:
-        return f"Asignatura: {self._nombre}, Salon: {self._salon}"
+    def __str__(self):
+        return f"{self._nombre} {self._salon}"
